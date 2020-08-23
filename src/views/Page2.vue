@@ -1,0 +1,43 @@
+<template>
+  <div>
+	<h4>You are second page.</h4>
+  <div class="mt-4">
+      <h5 class="mb-2">Theme Mode</h5>
+      <div>
+          <vs-radio v-model="themeMode" vs-value="light" class="mr-4" vs-name="theme-mode-light">Light</vs-radio>
+          <vs-radio v-model="themeMode" vs-value="dark" class="mr-4" vs-name="theme-mode-dark">Dark</vs-radio>
+          <vs-radio v-if="layoutType === 'vertical'" v-model="themeMode" vs-value="semi-dark" vs-name="theme-mode-semi-dark">Semi Dark</vs-radio>
+      </div>
+  </div>
+  </div>
+</template>
+
+<script>
+import VuePerfectScrollbar from 'vue-perfect-scrollbar'
+
+export default {
+  props: {
+  },
+  data () {
+    return {
+      themeMode: 'semi-dark',
+      themeColors: ['#7367F0', '#28C76F', '#EA5455', '#FF9F43', '#1E1E1E']
+    }
+  },
+  watch: {
+    themeMode (val) {
+        if (val === 'dark') {
+            if (document.body.className.match('theme-semi-dark')) document.body.classList.remove('theme-semi-dark')
+            document.body.classList.add('theme-dark')
+        } else {
+            alert(val);
+            if (document.body.className.match('theme-dark'))      document.body.classList.remove('theme-dark')
+            if (document.body.className.match('theme-semi-dark')) document.body.classList.remove('theme-semi-dark')
+        }
+    }
+  },
+  computed: {
+  }
+}
+  
+</script>
