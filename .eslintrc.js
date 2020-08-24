@@ -9,7 +9,7 @@ module.exports = {
     'eslint:recommended'
   ],
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-console': process.env.NODE_ENV === 'production' ? 'off' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
 
     // Best Practices
@@ -66,7 +66,8 @@ module.exports = {
     'prefer-template': 'error',
 
     // Vue
-    "vue/html-quotes": ["error", "double"]
+    "vue/html-quotes": ["error", "double"],
+    'no-irregular-whitespace':'off'
   },
   parserOptions: {
     parser: 'babel-eslint',
