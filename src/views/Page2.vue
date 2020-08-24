@@ -13,7 +13,6 @@
 </template>
 
 <script>
-import VuePerfectScrollbar from 'vue-perfect-scrollbar'
 
 export default {
   props: {
@@ -27,12 +26,11 @@ export default {
   watch: {
     themeMode (val) {
         if (val === 'dark') {
-            if (document.body.className.match('theme-semi-dark')) document.body.classList.remove('theme-semi-dark')
-            document.body.classList.add('theme-dark')
+            if (document.body.className.match('theme-semi-dark')) document.body.classList.remove('theme-semi-dark');
+            document.body.classList.add('theme-dark');
         } else {
-            alert(val);
-            if (document.body.className.match('theme-dark'))      document.body.classList.remove('theme-dark')
-            if (document.body.className.match('theme-semi-dark')) document.body.classList.remove('theme-semi-dark')
+            if (document.body.className.match('theme-dark')) document.body.classList.remove('theme-dark');
+            if (document.body.className.match('theme-semi-dark')) document.body.classList.remove('theme-semi-dark');
         }
     }
   },

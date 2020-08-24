@@ -1,3 +1,5 @@
 <template>
-	<h4>You are in home.</h4>
+    <div>
+        <h4>You are in home.</h4>
+    </div>
 </template>
