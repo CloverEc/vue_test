@@ -11,8 +11,20 @@
 export default [
   {
     url: "/",
-    name: "Home",
+    name: "首页",
     slug: "home",
+    icon: "HomeIcon",
+  },
+  {
+    url: "/deposit",
+    name: "存款",
+    slug: "deposit",
+    icon: "HomeIcon",
+  },
+  {
+    url: "/borrow",
+    name: "借贷",
+    slug: "borrow",
     icon: "HomeIcon",
   },
   {

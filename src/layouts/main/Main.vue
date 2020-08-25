@@ -37,7 +37,8 @@
         ]"
         :navMenuItems="navMenuItems" />
     </template>
-
+    <!-- Header -->
+    <!-- 
     <template v-else>
       <the-navbar-vertical
         :navbarColor="navbarColor"
@@ -45,7 +46,7 @@
           {'text-white' : isNavbarDark  && !isThemeDark},
           {'text-base'  : !isNavbarDark && isThemeDark}
         ]" />
-    </template>
+    </template> -->
     <!-- /Navbar -->
 
       <div class="content-wrapper">
@@ -108,6 +109,7 @@
           </div>
         </div>
       </div>
+      <!-- Footer -->
       <the-footer />
     </div>
   </div>
