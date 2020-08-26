@@ -31,7 +31,7 @@ $grey: #b8c2cc;
 $grey-light: #dae1e7;
 $white: #fff;
 $black: #22292f;
-
+$c2EBAC6: #2EBAC6;
 
 /*========================================================
         TYPOGRAPHY
@@ -47,6 +47,7 @@ $font-family-base:        $font-family-sans-serif !default;
 $font-size-base:          14px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default;
 $font-size-small:         ceil(($font-size-base * 0.85)) !default;
+$font-size-48: 48px;
 
 $h1-font-size:                $font-size-base * 2;
 $h2-font-size:                $font-size-base * 1.74;
@@ -101,3 +102,6 @@ $theme-dark-heading-color: #ebeefd;
 // $theme-dark-heading-color: #C9CAD2;
 $theme-dark-border-color: #414561;
 $theme-dark-shadow-color: #0C112E;
+
+
+$focus_shadow_primary: 0px 0px 10px 1px rgba(var(--vs-primary),.7);

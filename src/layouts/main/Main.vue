@@ -218,4 +218,8 @@ export default {
 }
 
 </script>
-
+<style lang="scss" scope>
+    .navbar-floating .router-content {
+        margin-top: 0px;
+    }
+</style>

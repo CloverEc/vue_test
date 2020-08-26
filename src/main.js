@@ -22,6 +22,10 @@ Vue.use(Vuesax)
 import axios from './axios.js'
 Vue.prototype.$http = axios
 
+import echarts from 'echarts'
+Vue.prototype.$echarts = echarts;
+
+
 // Filters
 import './filters/filters.js'
 

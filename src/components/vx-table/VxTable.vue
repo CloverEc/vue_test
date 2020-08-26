@@ -1,6 +1,6 @@
 <template>
     <div id="data-list-thumb-view" class="data-list-container">
-        <vs-table :data="users" scroll  @sort="handleSort" :sst="true">
+        <vs-table :data="users" scroll  @sort="handleSort" :sst="true" :onlyIconExpand="true">
             <template slot="thead">
                 <vs-th sort-key="name">资产</vs-th>
                 <vs-th sort-key="scale">市场规模</vs-th>
@@ -161,7 +161,7 @@
             .vs-table {
                 border-collapse: separate;
                 border-spacing: 0 1.3rem;
-                padding: 0 1rem;
+                /* padding: 0 1rem; */
                 tr {
                     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .05);
                     td {
@@ -248,7 +248,6 @@
             font-size: $font-size-large;
         }
         .table-list {
-
             .tit {
                 font-size: $font-size-large;
                 font-weight: 600;
@@ -258,6 +257,9 @@
             }
         }
         .td-deposit {
+            .tit span {
+                color: #F0650A;
+            }
             .average {
                 font-size: $font-size-small;
                 span {
@@ -273,6 +275,11 @@
         .td-fixed-borrow .bor {
             color: #B6509E !important;
         }
-
+        
+       
+            .vs-table--tbody-table .tr-values:not(.activeEdit):not(.tr-expandedx):not(.hoverFlat):hover {
+                box-shadow: $focus_shadow_primary !important;
+            }
+       
     }
 </style>

@@ -35,6 +35,11 @@ const router = new Router({
                     component: () => import('./views/Home.vue')
                 },
                 {
+                    path: '/reserve-overview',
+                    name: 'reserve overview',
+                    component: () => import('./../src/views/pages/ReserveOverview.vue')
+                },
+                {
                     path: '/deposit',
                     name: 'deposit',
                     component: () => import('./views/Deposit.vue')
