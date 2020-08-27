@@ -45,9 +45,29 @@ const router = new Router({
                     component: () => import('./views/Deposit.vue')
                 },
                 {
+                    path: '/deposit-detail',
+                    name: 'deposit detail',
+                    component: () => import('./views/pages/DepositDetail.vue')
+                },
+                {
                     path: '/borrow',
                     name: 'borrow',
                     component: () => import('./views/Borrow.vue')
+                },
+                {
+                    path: '/history',
+                    name: 'history',
+                    component: () => import('./views/History.vue')
+                },
+                {
+                    path: '/liquidations',
+                    name: 'liquidations',
+                    component: () => import('./views/Liquidation.vue')
+                },
+                {
+                    path: '/faq',
+                    name: 'faq',
+                    component: () => import('./views/Question.vue')
                 },
                 {
                     path: '/page2',

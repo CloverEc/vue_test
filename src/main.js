@@ -58,6 +58,10 @@ import store from './store/store'
 import { VueHammer } from 'vue2-hammer'
 Vue.use(VueHammer)
 
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+
+Vue.use(ElementUI);
 
 // PrismJS
 import 'prismjs'
@@ -66,8 +70,6 @@ import 'prismjs/themes/prism-tomorrow.css'
 
 // Feather font icon
 require('./assets/css/iconfont.css')
-
-
 // Vue select css
 // Note: In latest version you have to add it separately
 // import 'vue-select/dist/vue-select.css';

@@ -1,16 +1,26 @@
 <template>
-    <div id="data-list-thumb-view" class="data-list-container">
-        <!-- <vuescroll :ops="scrollOption"> -->
-        <!-- <vs-table :data="users" @sort="handleSort"> -->
-        <vs-table :data="users">
-            <template slot="thead">
-                <vs-th>资产</vs-th>
-                <vs-th>您的钱包余额</vs-th>
-                <vs-th>您已经存入</vs-th>
-                <vs-th>年化</vs-th>
-                <vs-th></vs-th>
-            </template>
-            <!-- <template slot-scope="{data}">
+    <div id="data-list-thumb-view" class="data-list-container" style="height: 300px;">
+        <vuescroll :ops="scrollOption">
+            <vs-table :data="users" @sort="handleSort" :sst="true" :onlyIconExpand="true">
+                <template slot="thead">
+                    <vs-th sort-key="name">资产</vs-th>
+                    <vs-th sort-key="scale">市场规模</vs-th>
+                    <vs-th sort-key="borrow">总借入额</vs-th>
+                    <vs-th sort-key="deposit">存款年化</vs-th>
+                    <vs-th sort-key="fixed_borrow">
+                        <div class="titdesc">
+                            <p class="rate">浮动利率</p>
+                            <p>借贷年化</p>
+                        </div>
+                    </vs-th>
+                    <vs-th sort-key="fixed_rate">
+                        <div class="titdesc">
+                            <p class="rate">固定利率</p>
+                            <p>借贷年化</p>
+                        </div>
+                    </vs-th>
+                </template>
+                <template slot-scope="{data}">
                     <tbody class="table-list">
                         <vs-tr :data="item" :key="i" v-for="(item, i) in users">
                             <vs-td class="td-fund" :data="item.name">
@@ -31,46 +41,17 @@
                                 <p class="average">Past 30D Avg.
                                     <span>{{ item.lending_rate_per }}</span>%</p>
                             </vs-td>
+                            <vs-td class="tit td-fixed-borrow">
+                                <span class="bor">{{ item.fixed_borrow }}</span>%</vs-td>
                         </vs-tr>
                     </tbody>
-                </template> -->
-        </vs-table>
-        <div style="height: 300px">
-            <vuescroll>
-                <vs-table :data="users">
-                    <template slot-scope="{data}">
-                        <tbody class="table-list">
-                            <vs-tr :data="item" :key="i" v-for="(item, i) in users">
-                                <vs-td class="td-fund" :data="item.name">
-                                    <img src="./../../assets/images/logo/logo.png" class="product-img" />
-                                    <span>{{item.name}}</span>
-                                </vs-td>
-                                <vs-td class="td-scale" :data="item.scale">{{ item.scale }}</vs-td>
-                                <vs-td class="td-scale" :data="item.borrow">{{ item.borrow }}</vs-td>
-                                <vs-td class="td-deposit" :data="item.deposit">
-                                    <p class="tit">
-                                        <span>{{ item.deposit }}</span>%</p>
-                                    <p class="average">Past 30D Avg.
-                                        <span>{{ item.deposit_per }}</span>%</p>
-                                </vs-td>
-                                <vs-td class="td-deposit td-lending-rate">
-                                    <p class="tit">
-                                        <span>{{ item.lending_rate }}</span>%</p>
-                                    <p class="average">Past 30D Avg.
-                                        <span>{{ item.lending_rate_per }}</span>%</p>
-                                </vs-td>
-                            </vs-tr>
-                        </tbody>
-                    </template>
-                </vs-table>
-            </vuescroll>
-        </div>
-
-        <!-- </vuescroll> -->
+                </template>
+            </vs-table>
+        </vuescroll>    
     </div>
 </template>
 <script>
-    import vuescroll from './../vue-scroll/VueScroll.vue'
+    import vuescroll from 'vuescroll';
     export default {
         data() {
             return {
@@ -134,54 +115,8 @@
                         "lending_rate": '5.65',
                         "lending_rate_per": '6.02',
                         'fixed_borrow': '7.49',
-                    }, {
+                    },{
                         "id": 6,
-                        "img": './../../assets/images/logo/logo.png',
-                        "name": "DAI",
-                        "scale": '35.23M',
-                        "borrow": '21.08M',
-                        "deposit": '3.53',
-                        "deposit_per": '11.09',
-                        "lending_rate": '5.65',
-                        "lending_rate_per": '6.02',
-                        'fixed_borrow': '7.49',
-                    },
-                    {
-                        "id": 7,
-                        "img": './../../assets/images/logo/logo.png',
-                        "name": "DAI",
-                        "scale": '35.23M',
-                        "borrow": '21.08M',
-                        "deposit": '3.53',
-                        "deposit_per": '11.09',
-                        "lending_rate": '5.65',
-                        "lending_rate_per": '6.02',
-                        'fixed_borrow': '7.49',
-                    },
-                    {
-                        "id": 8,
-                        "img": './../../assets/images/logo/logo.png',
-                        "name": "DAI",
-                        "scale": '35.23M',
-                        "borrow": '21.08M',
-                        "deposit": '3.53',
-                        "deposit_per": '11.09',
-                        "lending_rate": '5.65',
-                        "lending_rate_per": '6.02',
-                        'fixed_borrow': '7.49',
-                    }, {
-                        "id": 9,
-                        "img": './../../assets/images/logo/logo.png',
-                        "name": "DAI",
-                        "scale": '35.23M',
-                        "borrow": '21.08M',
-                        "deposit": '3.53',
-                        "deposit_per": '11.09',
-                        "lending_rate": '5.65',
-                        "lending_rate_per": '6.02',
-                        'fixed_borrow': '7.49',
-                    }, {
-                        "id": 10,
                         "img": './../../assets/images/logo/logo.png',
                         "name": "DAI",
                         "scale": '35.23M',
@@ -222,7 +157,6 @@
 </script>
 
 <style lang="scss">
-    /* #data-list-thumb-view .vs-con-table .vs-table */
     #data-list-thumb-view {
         .vs-con-table {
             .product-name {
@@ -260,7 +194,7 @@
             .vs-table {
                 border-collapse: separate;
                 border-spacing: 0 1.3rem;
-                padding: 0 1rem;
+                /* padding: 0 1rem; */
                 tr {
                     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .05);
                     td {
@@ -329,6 +263,10 @@
     }
 
     .data-list-container {
+        .table-body {
+            min-height: 150px;
+            max-height: 200px;
+        }
         .td-fund {
             .product-img {
                 width: 45px;

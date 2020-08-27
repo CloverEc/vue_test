@@ -18,6 +18,7 @@
     "chart.js": "^2.8.0",
     "core-js": "2.6.5",
     "echarts": "^4.2.1",
+    "element-ui": "^2.13.2",
     "file-saver": "2.0.1",
     "firebase": "7.13.2",
     "instantsearch.css": "^7.3.1",
@@ -59,6 +60,7 @@
     "vuedraggable": "^2.21.0",
     "vuejs-datepicker": "^1.5.4",
     "vuesax": "jd-0001/vuesax",
+    "vuescroll": "^4.16.1",
     "vuex": "^3.1.1",
     "xlsx": "^0.15.0"
   },
@@ -73,6 +75,7 @@
     "sass-loader": "^7.1.0",
     "script-loader": "0.7.2",
     "tailwindcss": "^1.0.1",
+    "vue-easytable": "^1.7.2",
     "vue-template-compiler": "^2.6.10"
   }
 }
