@@ -1,0 +1,110 @@
+@import './vuexy/_variables.scss';
+.home_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    .market_desc {
+        text-align: right;
+        h1 {
+            font-weight: $font-weight-bold;
+            font-size: $font-size-48;
+        }
+    }
+    .logo img {
+        width: 94px;
+        height: 70px;
+    }
+}
+
+.home_page {
+    .home_header_box {
+        padding: $padding_1;
+        .sortBtnGroup {
+            margin-top: 20px;
+        }
+    }
+    .tableBody {
+        display: flex;
+        flex-direction: column;
+        /* padding-top: 20px; */
+        padding-bottom: $pb_8rem;
+        .table_line {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: $white;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 20px 10px;
+            cursor: pointer;
+            .t_td {
+                flex: 1;
+                text-align: center;
+                height: 45px;
+            }
+            .single {
+                line-height: 45px;
+            }
+            .t_td:first-child {
+                text-align: left;
+            }
+            .t_td:last-child {
+                text-align: center;
+            }
+            .tit {
+                font-size: $font-size-large;
+                font-weight: 600;
+                span {
+                    margin-right: 3px;
+                }
+            }
+            .td-fund {
+                .product-img {
+                    width: 45px;
+                    height: 45px;
+                    vertical-align: middle;
+                    margin-right: 10px;
+                }
+            }
+            .td-scale {
+                font-weight: 600;
+                font-size: $font-size-large;
+            }
+            .td-deposit {
+                .tit span {
+                    color: #F0650A;
+                }
+                .average {
+                    font-size: $font-size-small;
+                    span {
+                        color: #F0650A;
+                    }
+                }
+            }
+            .td-lending-rate {
+                .tit span {
+                    color: #2EBAC6;
+                }
+            }
+            .td-fixed-borrow .tit span {
+                color: #B6509E;
+            }
+        }
+        .table_line:hover {
+            box-shadow: $focus_shadow_primary;
+            transition: box-shadow .5s;
+        }
+    }
+
+    .deposit_tip {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: $padding_1;
+        box-sizing: border-box;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid $grey;
+    }
+
+}
