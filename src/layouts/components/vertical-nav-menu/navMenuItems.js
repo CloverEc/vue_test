@@ -6,42 +6,47 @@
   Author: Pixinvent
   Author URL: http://www.themeforest.net/user/pixinvent
 ==========================================================================================*/
+import i18n from '@/lang/i18n.js';
+import storageUtils from '@/assets/utils/storageUtils.js';
+
+let lang = i18n.locale || storageUtils.getLang();
+let t = i18n.messages[lang];
 
 
 export default [
   {
     url: "/",
-    name: "首页",
+    name: t.navBar_home,
     slug: "home",
     icon: "HomeIcon",
   },
   {
     url: "/deposit",
-    name: "存款",
+    name: t.navBar_deposit,
     slug: "deposit",
     icon: "HomeIcon",
   },
   {
     url: "/borrow",
-    name: "借贷",
+    name: t.navBar_borrow,
     slug: "borrow",
     icon: "HomeIcon",
   },
   {
     url: "/history",
-    name: "历史记录",
+    name: t.navBar_history,
     slug: "history",
     icon: "HomeIcon",
   },
   {
     url: "/liquidations",
-    name: "清算",
+    name: t.navBar_liquidation,
     slug: "liquidations",
     icon: "HomeIcon",
   },
   {
     url: "/faq",
-    name: "常见问题",
+    name: t.navBar_faq,
     slug: "faq",
     icon: "HomeIcon",
   },

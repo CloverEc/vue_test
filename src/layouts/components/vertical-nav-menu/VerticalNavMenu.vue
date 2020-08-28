@@ -249,7 +249,7 @@ export default {
     },
     setVerticalNavMenuWidth () {
 
-      if (this.windowWidth > 1200) {
+    //   if (this.windowWidth > 1200) {
         if (this.layoutType === 'vertical') {
 
           // Set reduce
@@ -271,7 +271,7 @@ export default {
 
           return
         }
-      }
+    //   }
 
       // Close NavMenu
       this.$store.commit('TOGGLE_IS_VERTICAL_NAV_MENU_ACTIVE', false)

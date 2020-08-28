@@ -9,6 +9,15 @@
             <!-- <vs-radio v-if="layoutType === 'vertical'" v-model="themeMode" vs-value="semi-dark" vs-name="theme-mode-semi-dark">Semi Dark</vs-radio> -->
             <vs-radio v-model="themeMode" vs-value="semi-dark" vs-name="theme-mode-semi-dark">Semi Dark</vs-radio>          
         </div>
+        <div class="lang">
+            <div @click="changeLang('zh')">中文</div>
+            <div @click="changeLang('en')">English</div>
+
+            <!-- <div @click="$store.commit('SET_LANG','zh-CN')">中文 - VUEX</div>
+            <div @click="$store.commit('SET_LANG','en-US')">English - vuex</div>             -->
+            {{$t('login')}}<br />
+            <!-- {{$store.state.local_lang}} -->
+        </div>
     </div>
   </div>
 </template>
@@ -35,8 +44,12 @@ export default {
         }
     }
   },
-  computed: {
-  }
+  methods: {
+    changeLang(lang) {
+        this.$i18n.locale = lang;
+        this.$storage.setLang(lang);
+    }
+  },
 }
   
 </script>

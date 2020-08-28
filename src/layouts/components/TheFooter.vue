@@ -23,8 +23,16 @@
                     </template>
                 </vs-switch>
             </span>
-            <span>多语言</span>
 
+            <vs-dropdown vs-custom-content class="cursor-pointer more_lang">
+                <div class="con-img ml-3 currentLang">{{localLang}}
+                    <vs-icon class="dropIcon" icon="expand_more"></vs-icon>
+                </div>
+                <vs-dropdown-menu class="vx-navbar-dropdown">
+                    <vs-dropdown-item class="langItem" @click="changeLang('zh')">ZH</vs-dropdown-item>
+                    <vs-dropdown-item class="langItem" @click="changeLang('en')">EN</vs-dropdown-item>
+                </vs-dropdown-menu>
+            </vs-dropdown>
         </footer>
     </div>
 
@@ -34,11 +42,17 @@
     export default {
         name: 'the-footer',
         data: () => ({
-            switchDark: true
+            switchDark: true,
+            local_lang: '',
         }),
         props: {
             classes: {
                 type: String
+            }
+        },
+        computed: {
+            localLang() {
+                return this.local_lang || this.$storage.getLang();
             }
         },
         watch: {
@@ -53,6 +67,13 @@
                 }
             }
         },
+        methods: {
+            changeLang(lang) {
+                this.$i18n.locale = lang;
+                this.$storage.setLang(lang);
+                this.local_lang = lang;
+            }
+        },
     }
 </script>
 <style lang="scss" scope>
@@ -63,5 +84,22 @@
 
     .theme-dark .vs-switch {
         background: #e2e2e2;
+    }
+
+    .more_lang {
+        .currentLang {
+            border: 1px solid #786CF1;
+            padding: .5rem .8rem;
+            border-radius: 6px;
+            text-transform: uppercase;
+            .dropIcon {
+                font-size: 20px;
+                vertical-align: text-bottom;
+            }
+        }
+    }
+
+    .vs-dropdown--item {
+        padding: .5rem .7rem !important;
     }
 </style>

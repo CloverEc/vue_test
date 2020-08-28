@@ -58,10 +58,6 @@ import store from './store/store'
 import { VueHammer } from 'vue2-hammer'
 Vue.use(VueHammer)
 
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
-
-Vue.use(ElementUI);
 
 // PrismJS
 import 'prismjs'
@@ -77,8 +73,25 @@ require('./assets/css/iconfont.css')
 
 Vue.config.productionTip = false
 
+import storageUtils from '@/assets/utils/storageUtils.js';
+Vue.prototype.$storage = storageUtils; 
+
+import VueI18n from 'vue-i18n';
+Vue.use(VueI18n);
+
+// const i18n = new VueI18n({
+//     locale: storageUtils.getLang() , // 通过切换locale的值来实现语言切换
+//     messages: {
+//       'zh': require('@/lang/zh.js'), 
+//       'en': require('@/lang/en.js')
+//     }
+// })
+
+import i18n from '@/lang/i18n.js';
+
 new Vue({
   router,
+  i18n,
   store,
   render: h => h(App)
 }).$mount('#app')

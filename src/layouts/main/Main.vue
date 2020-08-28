@@ -38,7 +38,7 @@
         :navMenuItems="navMenuItems" />
     </template>
     <!-- Header -->
-    <!-- 
+<!--     
     <template v-else>
       <the-navbar-vertical
         :navbarColor="navbarColor"
