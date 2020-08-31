@@ -18,7 +18,6 @@
     "chart.js": "^2.8.0",
     "core-js": "2.6.5",
     "echarts": "^4.2.1",
-    "element-ui": "^2.13.2",
     "file-saver": "2.0.1",
     "firebase": "7.13.2",
     "instantsearch.css": "^7.3.1",

@@ -2,7 +2,7 @@ export default {
     users: [{
         "id": 1,
         "img": './../../assets/images/logo/logo.png',
-        "name": "DAI",
+        "name": "DAIDAIDAIDAIDAIDAIDAIDAIDAIDAIDAIDAIDAIDAIDAIDAIDAI",
         "scale": '35.23M',
         "borrow": '21.08M',
         "deposit": '3.53',
@@ -135,6 +135,107 @@ export default {
         "lending_rate": '5.65',
         "lending_rate_per": '6.02',
         'fixed_borrow': '7.49',
+    }],
+    deposit_users: [{
+        "id": 1,
+        "img": './../../assets/images/logo/logo.png',
+        "name": "DAIDAIDAIDAIDAIDAIDAIDAIDAIDAIDAIDAIDAIDAIDAIDAIDAI",
+        "scale": '35.23M',
+        "borrow": '21.08M',
+        "deposit": '3.53',
+        "deposit_per": '11.09',
+    },
+    {
+        "id": 2,
+        "img": './../../assets/images/logo/logo.png',
+        "name": "DAI",
+        "scale": '35.23M',
+        "borrow": '21.08M',
+        "deposit": '3.53',
+        "deposit_per": '11.09',
+    },
+    {
+        "id": 3,
+        "img": './../../assets/images/logo/logo.png',
+        "name": "DAI",
+        "scale": '35.23M',
+        "borrow": '21.08M',
+        "deposit": '3.53',
+        "deposit_per": '11.09'
+    },
+    {
+        "id": 4,
+        "img": './../../assets/images/logo/logo.png',
+        "name": "DAI",
+        "scale": '35.23M',
+        "borrow": '21.08M',
+        "deposit": '3.53',
+        "deposit_per": '11.09'
+    },
+    {
+        "id": 5,
+        "img": './../../assets/images/logo/logo.png',
+        "name": "DAI",
+        "scale": '35.23M',
+        "borrow": '21.08M',
+        "deposit": '3.53',
+        "deposit_per": '11.09'
+    }, {
+        "id": 6,
+        "img": './../../assets/images/logo/logo.png',
+        "name": "DAI",
+        "scale": '35.23M',
+        "borrow": '21.08M',
+        "deposit": '3.53',
+        "deposit_per": '11.09'
+    },{
+        "id": 7,
+        "img": './../../assets/images/logo/logo.png',
+        "name": "DAI",
+        "scale": '35.23M',
+        "borrow": '21.08M',
+        "deposit": '3.53',
+        "deposit_per": '11.09'
+    },{
+        "id": 8,
+        "img": './../../assets/images/logo/logo.png',
+        "name": "DAI",
+        "scale": '35.23M',
+        "borrow": '21.08M',
+        "deposit": '3.53',
+        "deposit_per": '11.09'
+    },{
+        "id": 9,
+        "img": './../../assets/images/logo/logo.png',
+        "name": "DAI",
+        "scale": '35.23M',
+        "borrow": '21.08M',
+        "deposit": '3.53',
+        "deposit_per": '11.09'
+    },{
+        "id": 10,
+        "img": './../../assets/images/logo/logo.png',
+        "name": "DAI",
+        "scale": '35.23M',
+        "borrow": '21.08M',
+        "deposit": '3.53',
+        "deposit_per": '11.09'
+    },{
+        "id": 11,
+        "img": './../../assets/images/logo/logo.png',
+        "name": "DAI",
+        "scale": '35.23M',
+        "borrow": '21.08M',
+        "deposit": '3.53',
+        "deposit_per": '11.09'
+    },{
+        "id": 12,
+        "img": './../../assets/images/logo/logo.png',
+        "name": "DAI",
+        "scale": '35.23M',
+        "borrow": '21.08M',
+        "deposit": '3.53',
+        "deposit_per": '11.09'
     }],
     home_list_tit: [{
         text: '资产',

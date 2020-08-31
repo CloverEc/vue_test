@@ -142,9 +142,10 @@ export default {
       isNavbarDark      : false,
       navbarColor       : themeConfig.navbarColor || '#fff',
       navbarType        : themeConfig.navbarType  || 'floating',
-      navMenuItems,
+      navMenuItems: navMenuItems[this.$store.state.local_lang],
       routerTransition  : themeConfig.routerTransition || 'none',
-      routeTitle        : this.$route.meta.pageTitle
+      routeTitle        : this.$route.meta.pageTitle,
+      local_lang: this.$store.state.local_lang
     }
   },
   watch: {
@@ -157,7 +158,10 @@ export default {
     },
     '$store.state.mainLayoutType' (val) {
       this.setNavMenuVisibility(val)
-    }
+    },
+    '$store.state.local_lang' (val) {
+        this.navMenuItems = navMenuItems[val];
+    },
   },
   computed: {
     bodyOverlay () { return this.$store.state.bodyOverlay },

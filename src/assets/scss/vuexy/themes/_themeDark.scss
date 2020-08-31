@@ -250,7 +250,7 @@
   // Vertical NavMenu
   .v-nav-menu {
     .vs-sidebar {
-      background-color: $sidebar-dark-bg;
+      background: $sidebar-dark-bg;
     }
 
     .shadow-bottom {
@@ -1528,6 +1528,33 @@
       background: $theme-light-dark-bg;
     }
   }
+
+  // Home page  
+  .home_page {
+        .market_desc h1 {
+            color: $white;
+        }
+        .tableBody .table_line {
+            background-color: $sidebar-dark-bg;
+        }
+        
+    }
+    .weui-switch {
+        border-width: 0px;
+        box-shadow: $focus_shadow_primary;
+       &::before {
+            background-color: $sidebar-dark-bg;
+       }   
+       &::after {
+            background-color: $content-dark-bg;
+       }     
+    }
+    // faq page
+    .faq_page {
+        .vs-collapse-item {
+            background-color: $sidebar-dark-bg;
+        }
+    }
 }
 
 

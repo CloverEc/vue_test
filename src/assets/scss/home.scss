@@ -28,7 +28,8 @@
         display: flex;
         flex-direction: column;
         /* padding-top: 20px; */
-        padding-bottom: $pb_8rem;
+        // padding-bottom: $pb_8rem;
+        padding-bottom: $pb_8_2rem;
         .table_line {
             display: flex;
             flex-direction: row;
@@ -42,12 +43,26 @@
                 flex: 1;
                 text-align: center;
                 height: 45px;
+                
             }
             .single {
                 line-height: 45px;
             }
             .t_td:first-child {
                 text-align: left;
+                display: flex;
+                flex-direction: row;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                align-items: center;
+                overflow: hidden;
+                span {
+                    display: inline-block;
+                    width: calc(100% - 45);
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
             }
             .t_td:last-child {
                 text-align: center;
