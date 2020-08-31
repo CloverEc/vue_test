@@ -16,6 +16,12 @@
 
 <script>
 import themeConfig from '@/../themeConfig.js'
+import Web3 from "web3";
+
+const providerOptions = {
+  /* See Provider Options Section */
+};
+
 
 export default {
   data () {
@@ -58,6 +64,9 @@ export default {
     }
   },
   mounted () {
+
+    const provider =  web3Modal.connect();
+    const web3 = new Web3(provider);
     this.toggleClassInBody(themeConfig.theme)
     this.$store.commit('UPDATE_WINDOW_WIDTH', window.innerWidth)
 

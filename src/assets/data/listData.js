@@ -1,8 +1,8 @@
 export default {
     users: [{
         "id": 1,
-        "img": './../../assets/images/logo/logo.png',
-        "name": "DAIDAIDAIDAIDAIDAIDAIDAIDAIDAIDAIDAIDAIDAIDAIDAIDAI",
+        "img": '/tokens/aries2.png',
+        "name": "ARIES",
         "scale": '35.23M',
         "borrow": '21.08M',
         "deposit": '3.53',
@@ -13,8 +13,8 @@ export default {
     },
     {
         "id": 2,
-        "img": './../../assets/images/logo/logo.png',
-        "name": "DAI",
+        "img": '/tokens/usdt.svg',
+        "name": "USDT",
         "scale": '35.23M',
         "borrow": '21.08M',
         "deposit": '3.53',
@@ -25,8 +25,8 @@ export default {
     },
     {
         "id": 3,
-        "img": './../../assets/images/logo/logo.png',
-        "name": "DAI",
+        "img": '/tokens/usdc.svg',
+        "name": "USDC",
         "scale": '35.23M',
         "borrow": '21.08M',
         "deposit": '3.53',
@@ -37,8 +37,8 @@ export default {
     },
     {
         "id": 4,
-        "img": './../../assets/images/logo/logo.png',
-        "name": "DAI",
+        "img": '/tokens/chainlink.png',
+        "name": "LINK",
         "scale": '35.23M',
         "borrow": '21.08M',
         "deposit": '3.53',
@@ -49,7 +49,7 @@ export default {
     },
     {
         "id": 5,
-        "img": './../../assets/images/logo/logo.png',
+        "img": '/tokens/dai.png',
         "name": "DAI",
         "scale": '35.23M',
         "borrow": '21.08M',
@@ -60,8 +60,8 @@ export default {
         'fixed_borrow': '7.49',
     }, {
         "id": 6,
-        "img": './../../assets/images/logo/logo.png',
-        "name": "DAI",
+        "img": '/tokens/eth.svg',
+        "name": "ETH",
         "scale": '35.23M',
         "borrow": '21.08M',
         "deposit": '3.53',
@@ -71,7 +71,7 @@ export default {
         'fixed_borrow': '7.49',
     },{
         "id": 7,
-        "img": './../../assets/images/logo/logo.png',
+        "img": '/tokens/wrapped-bitcoin.png',
         "name": "DAI",
         "scale": '35.23M',
         "borrow": '21.08M',
@@ -82,8 +82,8 @@ export default {
         'fixed_borrow': '7.49',
     },{
         "id": 8,
-        "img": './../../assets/images/logo/logo.png',
-        "name": "DAI",
+        "img": '/tokens/yfi.png',
+        "name": "YFI",
         "scale": '35.23M',
         "borrow": '21.08M',
         "deposit": '3.53',
@@ -93,7 +93,7 @@ export default {
         'fixed_borrow': '7.49',
     },{
         "id": 9,
-        "img": './../../assets/images/logo/logo.png',
+        "img": '/tokens/dai.png',
         "name": "DAI",
         "scale": '35.23M',
         "borrow": '21.08M',
@@ -104,7 +104,7 @@ export default {
         'fixed_borrow': '7.49',
     },{
         "id": 10,
-        "img": './../../assets/images/logo/logo.png',
+        "img": '/tokens/dai.png',
         "name": "DAI",
         "scale": '35.23M',
         "borrow": '21.08M',
@@ -115,7 +115,7 @@ export default {
         'fixed_borrow': '7.49',
     },{
         "id": 11,
-        "img": './../../assets/images/logo/logo.png',
+        "img": '/tokens/dai.png',
         "name": "DAI",
         "scale": '35.23M',
         "borrow": '21.08M',
@@ -126,7 +126,7 @@ export default {
         'fixed_borrow': '7.49',
     },{
         "id": 12,
-        "img": './../../assets/images/logo/logo.png',
+        "img": '/tokens/dai.png',
         "name": "DAI",
         "scale": '35.23M',
         "borrow": '21.08M',
@@ -138,7 +138,7 @@ export default {
     }],
     deposit_users: [{
         "id": 1,
-        "img": './../../assets/images/logo/logo.png',
+        "img": '/tokens/dai.png',
         "name": "DAIDAIDAIDAIDAIDAIDAIDAIDAIDAIDAIDAIDAIDAIDAIDAIDAI",
         "scale": '35.23M',
         "borrow": '21.08M',
@@ -147,7 +147,7 @@ export default {
     },
     {
         "id": 2,
-        "img": './../../assets/images/logo/logo.png',
+        "img": '/tokens/dai.png',
         "name": "DAI",
         "scale": '35.23M',
         "borrow": '21.08M',
@@ -156,7 +156,7 @@ export default {
     },
     {
         "id": 3,
-        "img": './../../assets/images/logo/logo.png',
+        "img": '/tokens/dai.png',
         "name": "DAI",
         "scale": '35.23M',
         "borrow": '21.08M',
@@ -165,7 +165,7 @@ export default {
     },
     {
         "id": 4,
-        "img": './../../assets/images/logo/logo.png',
+        "img": '/tokens/dai.png',
         "name": "DAI",
         "scale": '35.23M',
         "borrow": '21.08M',
@@ -174,7 +174,7 @@ export default {
     },
     {
         "id": 5,
-        "img": './../../assets/images/logo/logo.png',
+        "img": '/tokens/dai.png',
         "name": "DAI",
         "scale": '35.23M',
         "borrow": '21.08M',
@@ -182,7 +182,7 @@ export default {
         "deposit_per": '11.09'
     }, {
         "id": 6,
-        "img": './../../assets/images/logo/logo.png',
+        "img": '/tokens/dai.png',
         "name": "DAI",
         "scale": '35.23M',
         "borrow": '21.08M',
@@ -190,7 +190,7 @@ export default {
         "deposit_per": '11.09'
     },{
         "id": 7,
-        "img": './../../assets/images/logo/logo.png',
+        "img": '/tokens/dai.png',
         "name": "DAI",
         "scale": '35.23M',
         "borrow": '21.08M',
@@ -198,7 +198,7 @@ export default {
         "deposit_per": '11.09'
     },{
         "id": 8,
-        "img": './../../assets/images/logo/logo.png',
+        "img": '/tokens/dai.png',
         "name": "DAI",
         "scale": '35.23M',
         "borrow": '21.08M',
@@ -206,7 +206,7 @@ export default {
         "deposit_per": '11.09'
     },{
         "id": 9,
-        "img": './../../assets/images/logo/logo.png',
+        "img": '/tokens/dai.png',
         "name": "DAI",
         "scale": '35.23M',
         "borrow": '21.08M',
@@ -214,7 +214,7 @@ export default {
         "deposit_per": '11.09'
     },{
         "id": 10,
-        "img": './../../assets/images/logo/logo.png',
+        "img": '/tokens/dai.png',
         "name": "DAI",
         "scale": '35.23M',
         "borrow": '21.08M',
@@ -222,7 +222,7 @@ export default {
         "deposit_per": '11.09'
     },{
         "id": 11,
-        "img": './../../assets/images/logo/logo.png',
+        "img": '/tokens/dai.png',
         "name": "DAI",
         "scale": '35.23M',
         "borrow": '21.08M',
@@ -230,7 +230,7 @@ export default {
         "deposit_per": '11.09'
     },{
         "id": 12,
-        "img": './../../assets/images/logo/logo.png',
+        "img": '/tokens/dai.png',
         "name": "DAI",
         "scale": '35.23M',
         "borrow": '21.08M',

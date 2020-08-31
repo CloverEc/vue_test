@@ -5,7 +5,7 @@
                 <slot name="list-tit"></slot>
                 <div class="table_line" :key="i" v-for="(item, i) in users" @click="toReserveOver(item)">
                     <div class="t_td td-fund">
-                        <img src="./../../assets/images/logo/logo.png" class="product-img" />
+                        <img :src="item.img" class="product-img" />
                         <span>{{item.name}}</span>
                     </div>
                     <div class="t_td td-scale single">{{ item.scale }}</div>

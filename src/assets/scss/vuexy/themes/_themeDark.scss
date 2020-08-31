@@ -10,6 +10,9 @@
 
 .theme-dark {
 
+  .router-view {
+        background: none;
+  }
   // Changes color code of dark color
   --vs-dark: 184,194,204;
 
