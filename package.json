@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@chenfengyuan/vue-countdown": "^1.1.2",
+    "@walletconnect/client": "^1.2.2",
     "ag-grid-community": "^21.0.1",
     "ag-grid-vue": "^21.0.1",
     "algoliasearch": "^3.33.0",
@@ -18,7 +19,6 @@
     "chart.js": "^2.8.0",
     "core-js": "2.6.5",
     "echarts": "^4.2.1",
-    "element-ui": "^2.13.2",
     "file-saver": "2.0.1",
     "firebase": "7.13.2",
     "instantsearch.css": "^7.3.1",
@@ -43,6 +43,8 @@
     "vue-fullcalendar": "^1.0.9",
     "vue-i18n": "^8.11.2",
     "vue-instantsearch": "^2.2.1",
+    "vue-loader": "^15.9.3",
+    "vue-metamask": "^2.0.1",
     "vue-perfect-scrollbar": "^0.1.0",
     "vue-prism-component": "^1.1.1",
     "vue-property-decorator": "^8.1.1",
@@ -62,6 +64,7 @@
     "vuesax": "jd-0001/vuesax",
     "vuescroll": "^4.16.1",
     "vuex": "^3.1.1",
+    "web3": "^1.2.11",
     "xlsx": "^0.15.0"
   },
   "devDependencies": {

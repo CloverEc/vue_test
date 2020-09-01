@@ -1,25 +1,3 @@
 <template>
-  <svg viewBox="0 0 139 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="35">
-      <defs>
-          <linearGradient x1="100%" y1="10.5120544%" x2="50%" y2="89.4879456%" id="linearGradient-1">
-              <stop stop-color="#000000" offset="0%"></stop>
-              <stop stop-color="#FFFFFF" offset="100%"></stop>
-          </linearGradient>
-          <linearGradient x1="64.0437835%" y1="46.3276743%" x2="37.373316%" y2="100%" id="linearGradient-2">
-              <stop stop-color="#EEEEEE" stop-opacity="0" offset="0%"></stop>
-              <stop stop-color="#FFFFFF" offset="100%"></stop>
-          </linearGradient>
-      </defs>
-      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <g id="Artboard" transform="translate(-400.000000, -178.000000)">
-              <g id="Group" transform="translate(400.000000, 178.000000)">
-                  <path d="M-5.68434189e-14,2.84217094e-14 L39.1816085,2.84217094e-14 L69.3453773,32.2519224 L101.428699,2.84217094e-14 L138.784583,2.84217094e-14 L138.784199,29.8015838 C137.958931,37.3510206 135.784352,42.5567762 132.260463,45.4188507 C128.736573,48.2809251 112.33867,64.5239941 83.0667527,94.1480575 L56.2750821,94.1480575 L6.71554594,44.4188507 C2.46876683,39.9813776 0.345377275,35.1089553 0.345377275,29.8015838 C0.345377275,24.4942122 0.230251516,14.560351 -5.68434189e-14,2.84217094e-14 Z" id="Path" class="text-primary fill-current"></path>
-                  <path d="M69.3453773,32.2519224 L101.428699,1.42108547e-14 L138.784583,1.42108547e-14 L138.784199,29.8015838 C137.958931,37.3510206 135.784352,42.5567762 132.260463,45.4188507 C128.736573,48.2809251 112.33867,64.5239941 83.0667527,94.1480575 L56.2750821,94.1480575 L32.8435758,70.5039241 L69.3453773,32.2519224 Z" id="Path" fill="url(#linearGradient-1)" opacity="0.2"></path>
-                  <polygon id="Path-2" fill="#000000" opacity="0.049999997" points="69.3922914 32.4202615 32.8435758 70.5039241 54.0490008 16.1851325"></polygon>
-                  <polygon id="Path-2" fill="#000000" opacity="0.099999994" points="69.3922914 32.4202615 32.8435758 70.5039241 58.3683556 20.7402338"></polygon>
-                  <polygon id="Path-3" fill="url(#linearGradient-2)" opacity="0.099999994" points="101.428699 0 83.0667527 94.1480575 130.378721 47.0740288"></polygon>
-              </g>
-          </g>
-      </g>
-  </svg>
+    <svg id="レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 242.93 242.93"><defs><linearGradient id="名称未設定グラデーション_89" x1="26.38" y1="117.74" x2="215.83" y2="117.74" gradientUnits="userSpaceOnUse"><stop offset="0.28" stop-color="#fff"/><stop offset="0.37" stop-color="#84bcff"/><stop offset="0.64" stop-color="#84bcff"/><stop offset="0.66" stop-color="#a3cdff"/><stop offset="0.71" stop-color="#e5f1ff"/><stop offset="0.73" stop-color="#fff"/></linearGradient></defs><title>aries2</title><circle cx="121.46" cy="121.46" r="121.46" style="fill:#0070ff"/><path d="M55.72,114.66Z" transform="translate(-0.45 -0.21)" style="fill:#fff"/><path d="M55.72,114.66h0v0Z" transform="translate(-0.45 -0.21)"/><path d="M55.72,114.66Z" transform="translate(-0.45 -0.21)" style="fill:#fff"/><path d="M55.72,114.64v0h0v0Z" transform="translate(-0.45 -0.21)"/><path d="M151.73,131.4c0-14.6.88-26.87-3.12-34.87-2.83-5.66-10-18-28-18-14,0-23,8-28,21-5.8,15.06-3.53,14.23-3.53,14.23C89,124.06,80.42,132,70.1,132a18.85,18.85,0,0,1-18.79-18.67H26.38A43.77,43.77,0,0,0,70.1,157c24.1,0,43.46-18.76,43.56-42.83,0,0,.19,18,.19,10.69,0-10,0-21,7-21s7.7,7.37,7.7,20.6V114c.1,24.07,19.46,42.83,43.55,42.83a43.78,43.78,0,0,0,43.73-43.61H190.89a18.83,18.83,0,0,1-18.79,18.67c-10.32,0-18.87-8-19-18.25" transform="translate(-0.45 -0.21)" style="fill:url(#名称未設定グラデーション_89)"/><path d="M120.66,186.21c-14,0-23-8-28-21C86.86,150.14,89.13,113,89.13,113c-.1-10.3-8.66-18.25-19-18.25A18.85,18.85,0,0,0,51.36,113.4H26.43A43.77,43.77,0,0,1,70.15,69.79c24.1,0,43.46,18.76,43.56,42.83,0,0,.19,20,.19,27.3,0,10,0,21,7,21s7.7-7.36,7.7-20.59V112.7c.1-24.07,19.46-42.83,43.55-42.83a43.78,43.78,0,0,1,43.73,43.61H190.94A18.84,18.84,0,0,0,172.15,94.8a18.65,18.65,0,0,0-19,18.26v28.55h0c0,14.6-.55,18.6-4.55,26.6C145.83,173.87,138.66,186.21,120.66,186.21Z" transform="translate(-0.45 -0.21)" style="fill:#fff"/></svg>
 </template>

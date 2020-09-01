@@ -32,7 +32,7 @@
           <!-- Logo -->
           <router-link tag="div" class="vx-logo cursor-pointer flex items-center" to="/">
             <logo class="w-10 mr-4 fill-current text-primary" />
-            <span class="vx-logo-text text-primary" v-show="isMouseEnter || !reduce" v-if="title">{{ title }}</span>
+            <span class="vx-logo-text " style="color:#0070FF;" v-show="isMouseEnter || !reduce" v-if="title">{{ title }}</span>
           </router-link>
           <!-- /Logo -->
 
@@ -249,7 +249,7 @@ export default {
     },
     setVerticalNavMenuWidth () {
 
-      if (this.windowWidth > 1200) {
+    //   if (this.windowWidth > 1200) {
         if (this.layoutType === 'vertical') {
 
           // Set reduce
@@ -271,7 +271,7 @@ export default {
 
           return
         }
-      }
+    //   }
 
       // Close NavMenu
       this.$store.commit('TOGGLE_IS_VERTICAL_NAV_MENU_ACTIVE', false)

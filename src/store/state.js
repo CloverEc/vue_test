@@ -10,7 +10,7 @@
 import navbarSearchAndPinList from "@/layouts/components/navbar/navbarSearchAndPinList"
 import themeConfig from "@/../themeConfig.js"
 import colors from "@/../themeConfig.js"
-
+import storageUtils from '@/assets/utils/storageUtils.js';
 // /////////////////////////////////////////////
 // Helper
 // /////////////////////////////////////////////
@@ -68,6 +68,12 @@ const state = {
     // Can be used to get current window with
     // Note: Above breakpoint state is for internal use of sidebar & navbar component
     windowWidth: null,
+    local_lang: storageUtils.getLang(),
+    
 }
+
+
+
+
 
 export default state
