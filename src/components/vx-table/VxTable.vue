@@ -17,7 +17,7 @@
                             <span>{{ item.deposit_per }}</span>%</p>
                     </div>
                     <div class="t_td single" v-if="listType === 'deposit' || listType === 'borrow'">
-                        <vs-button color="primary" type="filled">详 情</vs-button>
+                        <vs-button color="primary" type="filled">{{$t('detail')}}</vs-button>
                     </div>
                     <div class="t_td td-deposit td-lending-rate" v-if="item.lending_rate">
                         <p class="tit">

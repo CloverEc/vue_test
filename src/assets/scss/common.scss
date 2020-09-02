@@ -1,4 +1,28 @@
-@import '../_variables.scss';
+@import '@/assets/scss/vuexy/_variables.scss';
 // .focus_shadow {
 //     box-shadow: $focus_shadow_primary;
 // }
+.myDisabled {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 160px;
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px 0px;
+    padding: 0px 25px;
+    border-radius: 25px;
+    border-width: 1px;
+    border-style: solid;
+    border-image: initial;
+    cursor: not-allowed;
+    font-size: $h6-font-size;
+}
+.mobileHeaderStyle {
+    padding-left: $pl_4 !important;
+}
+.mobileHeaderStyleTop {
+    padding-top: 4rem;
+}
