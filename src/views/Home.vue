@@ -1,18 +1,17 @@
 <template>
     <div class="home_page">
         <div class="home_header_box" ref="listHeader">
-            <div class="home_header">
+            <div class="home_header" :class="$store.state.isMobile ? 'mobileHeaderStyle' : ''">
                 <div class="logo">
-                    <!-- <img src="@/assets/images/logo/logo.png" /> -->
                     <vs-button color="primary" type="filled" v-on:click="connect">Connect</vs-button>
                 </div>
                 <div class="market_desc">
-                    <h3>当前市场规模</h3>
+                    <h3>{{$t('current_market_size')}}</h3>
                     <h1>$ 1,630,633,040.33</h1>
                 </div>
             </div>
             <type-switch text="USD|Native" v-model="type_switch_value"></type-switch>
-            <sort-table-header :sortArr="sortArr"></sort-table-header>
+            <sort-table-header :sortArr="$t('home_list_sort_header')"></sort-table-header>
         </div>
         <vx-table 
             ref="vxTable"
@@ -65,6 +64,7 @@
                 type_switch_value: '',
                 sortArr: listData.home_list_tit,
                 users: listData.users,
+                testData: this.$t('login')
             }
         },
         components: {
@@ -89,3 +89,6 @@
         },
     }
 </script>
+<style lang="scss" scope>
+    @import '@/assets/scss/common.scss';
+</style>

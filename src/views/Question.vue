@@ -1,6 +1,6 @@
 <template lang="html">
     <div class="faq_page">
-        <div class="col_box" :style="{height: tableBodyHeight}">
+        <div class="col_box" :style="{height: tableBodyHeight}" :class="$store.state.isMobile ? 'mobileHeaderStyleTop' : ''">
             <vuescroll>
                 <template v-for="(item, index) in faq_list">
                     <h4 class="maintit">{{item.maintit}}</h4>
@@ -36,9 +36,10 @@
     }
 </script>
 <style lang="scss" scope>
-    @import './../assets/scss/vuexy/_variables.scss';
+    @import '@/assets/scss/vuexy/_variables.scss';
+    @import '@/assets/scss/common.scss';
     .faq_page {
-        padding: $padding_1;
+        /* padding: $padding_1; */
         .col_box {
             padding-bottom: $pb_8rem;
             .maintit {

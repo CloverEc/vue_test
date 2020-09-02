@@ -117,6 +117,9 @@ const mutations = {
   
   setLang(state,lang) {
     state.local_lang = lang;
+  },
+  setIsMobile(state,isMobile) {
+    state.isMobile = isMobile
   }
 }
 

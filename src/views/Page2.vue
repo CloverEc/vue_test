@@ -19,8 +19,21 @@
                   <!-- {{$store.state.local_lang}} -->
               </div>
           </div>
-          <feather-icon icon="icon-anchor"  id="btnVNavMenuMinToggler"
+          <feather-icon icon="AnchorIcon"  id="btnVNavMenuMinToggler"
           class="mr-0 cursor-pointer" />
+
+        <!-- test -->
+          <div class="con-select-example">
+                <vs-select
+                    placeholder="Multiple"
+                    multiple
+                    class="selectExample"
+                    label="Figuras"
+                    v-model="select1"
+                >
+                    <vs-select-item :key="index" :value="item.value" :text="item.text" v-for="(item,index) in options1" />
+                </vs-select>
+          </div>
         </div>
       </template>
       
@@ -32,7 +45,13 @@
         data () {
           return {
             themeMode: 'semi-dark',
-            themeColors: ['#7367F0', '#28C76F', '#EA5455', '#FF9F43', '#1E1E1E']
+            themeColors: ['#7367F0', '#28C76F', '#EA5455', '#FF9F43', '#1E1E1E'],
+            select1:[],
+            options1:[
+                {text:'IT',value:0},
+                {text:'Blade Runner',value:2},
+                {text:'Thor Ragnarok',value:3},
+            ],
           }
         },
         watch: {

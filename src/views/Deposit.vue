@@ -1,8 +1,8 @@
 <template>
     <div class="home_page">
-        <div class="home_header_box" ref="listHeader">
-            <type-switch text="所有|稳定货币" v-model="type_switch_value"></type-switch>
-            <sort-table-header :sortArr="sortArr"></sort-table-header>
+        <div class="home_header_box" ref="listHeader" :class="$store.state.isMobile ? 'mobileHeaderStyle' : ''">
+            <type-switch :text="$t('deposit_switch')" v-model="type_switch_value"></type-switch>
+            <sort-table-header :sortArr="$t('deposit_list_tit')"></sort-table-header>
         </div>
         <vx-table
             :users="users"
@@ -11,7 +11,7 @@
             >
             <div slot="list-tit">
                 <div class="deposit_tip">
-                    <div>如要进行存款，请将这些货币中的任何一种转到您的钱包中。</div>
+                    <div>{{$t('deposit_explain')}}</div>
                     <div>Can’t find your asset? Change market</div>
                 </div>
             </div>
@@ -44,3 +44,6 @@
         },
     }
 </script>
+<style lang="scss" scope>
+    @import '@/assets/scss/common.scss';
+</style>

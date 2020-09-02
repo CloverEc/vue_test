@@ -14,7 +14,7 @@
 
             <span class="md:flex hidden items-center night-mode">
                 <!-- <span></span> -->
-                <p class="night-mode-tit"><span class="mode-txt">夜晚模式:</span><span>{{switchDark ? 'Off' : 'On'}}</span></p>
+                <p class="night-mode-tit"><span class="mode-txt">{{$t('dark_theme')}}:</span><span>{{switchDark ? 'Off' : 'On'}}</span></p>
                 <vs-switch v-model="switchDark" color="">
                     <template #off>
                         <i class='bx bx-check'></i>

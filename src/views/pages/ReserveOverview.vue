@@ -249,19 +249,23 @@
                 this.initCharts();
                 this.yearChart();
                 this.useChart();
-
                 this.reserveConfig();
-            }
+            },
+            chartResize() {
+                this.$echarts.init(this.$refs.allChart).resize();
+                this.$echarts.init(this.$refs.yearChart).resize();
+                this.$echarts.init(this.$refs.useChart).resize();
+                this.$echarts.init(this.$refs.statusConfig).resize();
+            },
         },
         mounted() {
             this.reqChartData();
 
             this.winHeight = document.documentElement.clientHeight;
-
             window.onresize = () => {
                 this.winHeight = document.documentElement.clientHeight;
+                this.chartResize();
             }
-            console.log('xxxx', this.winHeight);
         },
     }
 </script>

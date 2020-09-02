@@ -69,7 +69,7 @@ const state = {
     // Note: Above breakpoint state is for internal use of sidebar & navbar component
     windowWidth: null,
     local_lang: storageUtils.getLang(),
-    
+    isMobile: storageUtils.isMobile(),
 }
 
 
