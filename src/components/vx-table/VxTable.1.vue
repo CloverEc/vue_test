@@ -24,7 +24,7 @@
                     <tbody class="table-list">
                         <vs-tr :data="item" :key="i" v-for="(item, i) in users">
                             <vs-td class="td-fund" :data="item.name">
-                                <img src="./../../assets/images/logo/logo.png" class="product-img" />
+                                <img :src='item.img' class="product-img" />
                                 <span>{{item.name}}</span>
                             </vs-td>
                             <vs-td class="td-scale" :data="item.scale">{{ item.scale }}</vs-td>
